@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .custom-section {
+            background-color: #f8f9fa;
+            border-left: 5px solid #800000;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .custom-button {
+            background-color: #800000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .custom-button:hover {
+            background-color: #660000;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <nav class="bg-blue-600 p-4 text-white flex justify-between">
+    <nav class="bg-maroon-600 p-4 text-white flex justify-between" style="background-color: #800000;">
         <h1 class="text-2xl font-bold">My Portfolio</h1>
         <ul class="flex space-x-4">
             <li><a href="#about" class="hover:underline">About</a></li>
@@ -17,30 +40,33 @@
         </ul>
     </nav>
     
-    <section id="about" class="p-8 bg-white shadow-md mt-4 rounded-lg">
+    <section id="about" class="custom-section">
         <h2 class="text-3xl font-semibold">About Me</h2>
-        <p class="mt-2">Welcome! I am [Your Name], a [Your Profession/Interest].</p>
+        <p class="mt-2">Welcome! I am Vinicius Bobato, a PhD Student learning about AI and MAchine Learning.</p>
     </section>
     
-    <section id="qualifications" class="p-8 bg-white shadow-md mt-4 rounded-lg">
+    <section id="qualifications" class="custom-section">
         <h2 class="text-3xl font-semibold">Qualifications</h2>
         <ul class="mt-2 list-disc pl-5">
-            <li>[Degree/Certification]</li>
+            <li>Currently pursuing my PhD in Computer Engineering at Texas A&M University</li>
+            <li>MS Engineering Technology Graduate for Texas A&M University</li>
+            <li>BS Electronics Engineering Graduate for Texas A&M University</li>
             <li>[Skills/Experience]</li>
         </ul>
     </section>
     
-    <section id="projects" class="p-8 bg-white shadow-md mt-4 rounded-lg">
+    <section id="projects" class="custom-section">
         <h2 class="text-3xl font-semibold">Projects</h2>
         <p class="mt-2">Here are some projects I have worked on:</p>
         <ul class="mt-2 list-disc pl-5">
-            <li><strong>[Project Name]</strong> - [Short description]</li>
+            <li><strong>Project Name</strong> - [Short description]</li>
         </ul>
     </section>
     
-    <section id="contact" class="p-8 bg-white shadow-md mt-4 rounded-lg">
+    <section id="contact" class="custom-section">
         <h2 class="text-3xl font-semibold">Contact</h2>
-        <p class="mt-2">Feel free to reach out via <a href="mailto:your@email.com" class="text-blue-600">email</a>.</p>
+        <p class="mt-2">Feel free to reach out via <a href="mailto:vmbobato@tamu.edu" class="text-maroon-600" style="color: #800000;">email</a>.</p>
+        <button class="custom-button mt-4">Contact Me</button>
     </section>
 </body>
 </html>
