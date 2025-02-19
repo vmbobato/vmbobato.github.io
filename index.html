@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Vinicius Bobato</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -11,13 +11,13 @@
         }
         .custom-section {
             background-color: #f8f9fa;
-            border-left: 5px solid #800000;
+            border-left: 5px solid #500000;
             padding: 20px;
             margin: 10px 0;
             border-radius: 8px;
         }
         .custom-button {
-            background-color: #800000;
+            background-color: #500000;
             color: white;
             padding: 10px 15px;
             border: none;
@@ -25,26 +25,31 @@
             cursor: pointer;
         }
         .custom-button:hover {
-            background-color: #660000;
+            background-color: #500000;
         }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <nav class="bg-maroon-600 p-4 text-white flex justify-between" style="background-color: #800000;">
+    <nav class="bg-maroon-600 p-4 text-white flex justify-between" style="background-color: #500000;">
         <h1 class="text-2xl font-bold">My Portfolio</h1>
         <ul class="flex space-x-4">
             <li><a href="#about" class="hover:underline">About</a></li>
             <li><a href="#qualifications" class="hover:underline">Qualifications</a></li>
-            <li><a href="#projects" class="hover:underline">Projects</a></li>
+            <li><a href="https://www.github.com/vmbobato" class="hover:underline">GitHub</a></li>
+            <li><a href="#projects" class="hover:underline">Projects</a></li> 
+            <li><a href="resume.html" class="hover:underline">Resume</a></li>  
             <li><a href="#contact" class="hover:underline">Contact</a></li>
         </ul>
     </nav>
     
     <section id="about" class="custom-section">
         <h2 class="text-3xl font-semibold">About Me</h2>
-        <p class="mt-2">Welcome! I am Vinicius Bobato, a PhD Student passionate about technology, extending from embedded system projects, to 
-            modeling and attacking cyber networks! I am currently learning more about Machine Learning and AI .
-        </p>
+        <div class="'flex items-center mt-2">
+            <img src="me.jpg" allign="right" alt="Vinicius Bobato" class="w-40 h-40 rounded-full border-2 border-gray-300 mr-6 flex-shrink-0">
+            <p class="flex-1">Welcome! I am Vinicius Bobato, a PhD Student passionate about technology, extending from embedded system projects, to 
+                modeling and attacking cyber networks! I am currently learning more about Machine Learning and AI .
+            </p>
+        </div>
     </section>
     
     <section id="qualifications" class="custom-section">
@@ -60,9 +65,20 @@
     
     <section id="projects" class="custom-section">
         <h2 class="text-3xl font-semibold">Projects</h2>
+        <p class="mt-2">Current Projects:</p>
+        <ul class="mt-2 list-disc pl-5">
+            <li><strong>European Land Mass</strong> - We want to train a neural network using satellite 
+                images from Kaggle to classify land types such as city areas, forests, farmland, mountains, 
+                and roads. This classification can be used to automate land measurement calculations, which 
+                could be used in urban planning, agriculture planning, and environmental monitoring (for example 
+                monitor amount of melted ice per year or deforesting).</li>
+        </ul>
         <p class="mt-2">Here are some projects I have worked on:</p>
         <ul class="mt-2 list-disc pl-5">
-            <li><strong>Project Name</strong> - [Short description]</li>
+            <li><strong>Engineering Capstone</strong> - [Short description]</li>
+            <li><strong>ShellBridge</strong> - [Short description]</li>
+            <li><strong></strong> - [Short description]</li>
+            
         </ul>
     </section>
     
