@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .custom-button {
+            background-color: #500000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .custom-button:hover {
+            background-color: #500000;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-maroon-600 p-4 text-white flex justify-between" style="background-color: #500000;">
+        <h1 class="text-2xl font-bold">My Master Thesis</h1>
+        <a href="index.html" class="hover:underline">Back to Home</a>
+    </header>
+
+    <main class="p-6">
+        <h2 class="text-3xl font-semibold mb-4">CYBER SECURITY USE CASES IN A SMART POWER DISTRIBUTION
+            CYBER-PHYSICAL TESTBED</h2>
+        <div class="bg-white shadow-md p-4 rounded-lg">
+            <!-- Embed the PDF -->
+            <iframe src="Vinicius_Thesis_TAMU.pdf" width="100%" height="500px"></iframe>
+        </div>
+        <!-- Download Button -->
+        <a href="Vinicius_Thesis_TAMU.pdf" download class="custom-button mt-4 inline-block">Download Thesis</a>
+    </main>
+</body>
+</html>
