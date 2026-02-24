@@ -480,6 +480,64 @@ h1{
   border-top: 1px solid var(--line);
 }
 
+.logo-grid{
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1100px){
+  .logo-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px){
+  .logo-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.logo-card{
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.logo-row{
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  justify-content: center;   /* ← centers horizontally */
+  align-items: center;       /* ← aligns vertically */
+}
+
+.logo-row img{
+  width: 34px;
+  height: 34px;
+  opacity: .7;
+  filter: invert(1);
+  transition: all .25s ease;
+}
+
+.logo-row img{
+  flex: 0 0 48px;   /* fixed tile width */
+  display: flex;
+  justify-content: center;
+}
+
+:root[data-theme="light"] .logo-row img{
+  filter: invert(0);
+}
+
+.logo-row img:hover{
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
 
 
 /* nav active state (optional) */
