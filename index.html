@@ -1,371 +1,351 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinicius Bobato, M.S. - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Vinicius M. Bobato — ML/AI + Cybersecurity + Cloud Software" />
+  <title>Vinicius M. Bobato | Portfolio</title>
+
+  <link rel="icon" href="assets/cli.png" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <nav class="bg-maroon-600 p-4 text-white fixed w-full top-0 z-50" style="background-color: #500000;">
-        <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-2xl font-bold">Vinicius Bobato, M.S.</h1>
-            <ul class="flex space-x-6 nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="resume.html" class="nav-link">Resume</a></li>
-                <li><a href="vinigpt.html" class="nav-link">ViniGPT</a></li>
-            </ul>
-            <div class="flex space-x-4">
-                <a href="https://www.github.com/vmbobato" target="_blank" class="hover:text-gray-300 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                        <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.55 0-.27-.01-1.15-.02-2.08-3.19.69-3.86-1.54-3.86-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.21 1.79 1.21 1.04 1.78 2.72 1.27 3.38.97.1-.75.41-1.27.75-1.56-2.54-.29-5.22-1.27-5.22-5.64 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.47.11-3.05 0 0 .96-.31 3.15 1.17A10.89 10.89 0 0 1 12 6.46c.97.01 1.95.13 2.87.37 2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.76.11 3.05.73.8 1.18 1.82 1.18 3.07 0 4.39-2.68 5.35-5.23 5.63.42.36.8 1.09.8 2.2 0 1.59-.01 2.87-.01 3.26 0 .3.21.65.8.54A11.48 11.48 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"></path>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/vmbobato/" target="_blank" class="hover:text-gray-300 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-3.5v-11h3.5v11zm-1.75-12.28c-1.14 0-2.06-.93-2.06-2.06 0-1.14.93-2.06 2.06-2.06s2.06.93 2.06 2.06c0 1.14-.93 2.06-2.06 2.06zm15.25 12.28h-3.5v-5.5c0-1.32-.03-3.02-1.84-3.02-1.84 0-2.12 1.43-2.12 2.91v5.61h-3.5v-11h3.36v1.51h.05c.47-.89 1.61-1.84 3.31-1.84 3.54 0 4.19 2.33 4.19 5.36v6.97z"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </nav>
-    
-    <div class="hero-section mt-16">
-        <div class="container mx-auto">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Vinicius Bobato</h1>
-            <p class="text-xl md:text-2xl mb-8">Ph.D. Student in Computer Engineering at Texas A&M University</p>
-            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Passionate about cybersecurity, network analysis, and AI/ML. Making technology work for a better future.</p>
-            <a href="#contact" class="custom-button">Get in Touch</a>
-        </div>
-    </div>
 
-    <div class="container mx-auto px-4 py-8">
-    <section id="about" class="custom-section">
-        <h2 class="text-3xl font-semibold">About Me</h2>
-        <div class="flex items-center mt-2">
-            <img src="me.jpg" allign="right" alt="Vinicius Bobato" class="w-40 h-40 rounded-full border-2 border-gray-300 mr-6 flex-shrink-0">
-            <p class="flex-1">Hi, I'm Vinicius Bobato! I'm a Ph.D student in Computer Engineering at Texas A&M University, and I've always been passionate about
-                 exploring how technology can make a real difference in the world. My interests range from diving into cybersecurity and network analysis to building 
-                 embedded systems and, more recently, learning about AI and machine learning. I've had the chance to work on some exciting projects, from automating 
-                 tasks with embedded systems to tackling challenges in network security. When I'm not researching or building something new, I enjoy teaching, mentoring,
-                 and staying curious about the latest advancements in tech. I'm always looking for ways to grow and take on meaningful challenges!
+<body>
+  <!-- Top progress bar -->
+  <div id="progress" class="progress"></div>
+
+  <!-- Command Palette -->
+  <div id="paletteBackdrop" class="palette-backdrop" aria-hidden="true"></div>
+  <div id="palette" class="palette" role="dialog" aria-modal="true" aria-label="Command palette" aria-hidden="true">
+    <div class="palette-head">
+      <div class="kbd-hint">
+        <span class="pill">Ctrl</span><span class="pill">K</span>
+        <span class="muted">to open</span>
+      </div>
+      <button id="paletteClose" class="icon-btn" aria-label="Close command palette">✕</button>
+    </div>
+    <input id="paletteInput" class="palette-input" placeholder="Search sections, actions…" autocomplete="off" />
+    <div id="paletteList" class="palette-list" role="listbox"></div>
+    <div class="palette-foot muted">
+      Tip: type <span class="pill">resume</span>, <span class="pill">projects</span>, <span class="pill">email</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span>Vini Bobato, MS</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="work.html">Build With Me</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn ghost" type="button" aria-label="Toggle theme">
+          <span id="themeIcon" aria-hidden="true">☾</span>
+        </button>
+        <button id="openPalette" class="btn ghost" type="button">
+          <span class="mono">Ctrl K</span>
+        </button>
+        <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="badge">PhD • ML/AI • Cybersecurity • AWS</div>
+
+          <h1>
+            Vinicius M. Bobato
+            <span class="grad">builds secure, data-driven systems.</span>
+          </h1>
+
+          <div class="hero-avatar">
+            <img src="assets/avatar.png" alt="Cartoon avatar" />
+          </div>
+
+          <p class="lead">
+            Ph.D. candidate in Computer Engineering with research experience in machine learning and data-driven systems.
+            I build practical ML + cloud software—especially for security and automation.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <button class="btn" id="copyEmail" type="button" data-copy="vmbobato@tamu.edu">
+              Copy Email
+            </button>
+            <button class="btn ghost" id="copyPhone" type="button" data-copy="(817) 542-8538">
+              Copy Phone
+            </button>
+          </div>
+
+          <div class="hero-mini icons">
+            <a href="https://github.com/vmbobato" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <i data-lucide="github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/vmbobato" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+            </a>
+
+            <a href="#contact" aria-label="Contact">
+                <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card glass">
+            <div class="card-top">
+              <div class="mono muted">~/portfolio</div>
+              <div class="dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <pre class="terminal" aria-label="Terminal intro">
+<span class="t-muted">vmb@portfolio $</span> whoami
+vinicius_bobato
+
+<span class="t-muted">vmb@portfolio $</span> focus
+School: tamu
+Degree: phd_computer_engineering
+
+<span class="t-muted">vmb@portfolio $</span> currently
+software engineer @ Avika Billing Solutions
+graduate researcher @ TAMU (PRISE)
+            </pre>
+            <div class="card-actions">
+              <button class="btn" id="openPalette2" type="button">Open Command Palette</button>
+              <a class="btn ghost" href="#experience">View Timeline</a>
+            </div>
+          </div>
+
+          <div class="stack">
+            <div class="stat">
+              <div class="stat-num">100+</div>
+              <div class="stat-label">Active users served (Avika)</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">70%</div>
+              <div class="stat-label">Payment processing time reduction</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">95%</div>
+              <div class="stat-label">Traffic detection accuracy (research)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">A quick snapshot of what I do and what I care about.</p>
+        </div>
+
+        <div class="grid two">
+          <div class="card">
+            <h3>What I build</h3>
+            <p>
+              Secure web apps, cloud infrastructure, automation pipelines, and ML prototypes that can actually be tested and used.
+              I like projects where performance, reliability, and security all matter.
             </p>
+          </div>
+
+          <div class="card">
+            <h3>What I’m optimizing for</h3>
+            <ul class="list">
+              <li>Clear outcomes (time saved, accuracy improved, incidents reduced)</li>
+              <li>Security by default (WAF, least privilege, rate limiting)</li>
+              <li>Simple deployments that don’t break at 2AM</li>
+            </ul>
+          </div>
         </div>
-    </section>
-    
-    <section id="publications" class="custom-section">
-        <h2 class="text-3xl font-semibold">Publications</h2>
-        <ul class="mt-2 list-disc pl-5">
-            <li>Analyzing a Multi-Stage Cyber Threat and Its Impact on the Power System - IET Cyber-Physical Systems: Theory & Applications [<a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/cps2.12107" class="text-maroon-600 hover:underline" style="color: #500000">Link</a>]</li>
-            <li>Cyber Security of a Smart Power Distribution System - Cyber Subsystem Use Case - 2025 Grid Edge Technologies Conference & Exposition [<a href="https://ieeexplore.ieee.org/document/10887416" class="text-maroon-600 hover:underline" style="color: #500000">Link</a>]</li>
-            <li>Cyber Security Use Case on a Smart Power Distribution System - Physical Subsystem - 2025 Grid Edge Technologies Conference & Exposition [<a href="https://ieeexplore.ieee.org/document/10887477" class="text-maroon-600 hover:underline" style="color: #500000">Link</a>]</li>
-        </ul>
+      </div>
     </section>
 
-    <section id="qualifications" class="custom-section">
-        <h2 class="text-3xl font-semibold">Qualifications</h2>
-        <ul class="mt-2 list-disc pl-5">
-            <li>Currently pursuing my Ph.D in Computer Engineering at Texas A&M University</li>
-            <li>M.S. Engineering Technology Graduate for Texas A&M University   [<a href="thesis.html" class="hover:underline" style="color: #500000">Thesis</a>]</li>
-            <li>B.S. Electronics Engineering Graduate for Texas A&M University</li>
-            <li>Relevant Graduate Coursework:
-                <ul>
-                    <li>Artificial Intelligence, Deep Learning, Deep Reinforcement Learning, Intelligent Agents, Data Analysis and Tools for Industry, Intelligent Systems Design, Industrial IoT.</li>
-                </ul>
-            </li>
-            <li>Relevant Undergraduate Coursework: 
-                <ul>
-                    <li>Embedded Systems Software Developement, Advanced Network and Systems Security, Embedded Systems Development in C.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-    <section id="certifications" class="custom-section">
-        <h2 class="text-3xl font-semibold">Certifications</h2>
-        <ul class="mt-2 list-disc pl-5">
-            <li>Machine Learning with Python - IBM</li>
-            <li>Introduction to Deep Learning & Neural Networks with Keras - IBM</li>
-            <li>Deep Learning with PyTorch - IBM</li>
-            <li>Deep Learning with Keras and Tensorflow - IBM</li>
-            <li>GenAI Foundational Models for NLP & Language Understanding - IBM <i>-- (In Progress)</i></li>
-        </ul>
-    </section>
-    <section id="experience" class="custom-section">
-        <h2 class="text-3xl font-semibold">Experience</h2>
-        <p class="mt-2"><strong>Department of Electrical and Computer Engineering at Texas A&M University - PRISE Project</strong></p>
-        <p><i>Graduate Research, Dec. 2023 - Present</i></p>
-        <ul class="mt-2 list-disc pl-5">
-            <li>Modeled the network side of a Smart Distribution System and AMI RF mesh network using Linux containers. </li>
-            <li>Created Python scripts to allow communication between containers using TCP and UDP sockets. </li>
-            <li>Performed different cyber-attacks to analyze their impact on a Smart Distribution Grid using ARP spoofing and packet generation open-source tools. </li>
-            <li>Worked on the analysis of cyber-physical data in malicious settings using Python data-analysis tools.</li>
-        </ul>
-        <p class="mt-2"><strong>Department of Engineering Technology and Industrial Distribution at Texas A&M University</strong></p>
-        <p><i>Graduate Teacher Assistant for Local-and-Metropolitan-Area Networks, Jan 2024 - Present</i></p>
-        <ul class="mt-2 list-disc pl-5">
-            <li>Led hands-on lab sessions to guide students in gaining proficiency with terminal commands on various operating systems, facilitating practical experience in networking configuration and troubleshooting. </li>
-            <li>Designed and implemented varied networks using Cisco equipment for laboratory sessions. </li>
-            <li>Assisted students to understand and implement different communication protocols and standards on routers and switches (OSPF, BGP, RIP, DHCP, VLANs, Trunking, STP). </li>
-        </ul>
-        <p class="mt-2"><strong>Texas A&M Engineering Experiment Station (TEES) - <a href="https://cypres.engr.tamu.edu/" class="text-maroon-600 hover:underline" style="color: #500000">CyPRES Project</a></strong></p>
-        <p><i>Undergraduate/Graduate Research Assistant, May 2022 - Dec. 2023</i></p>
-        <ul class="mt-2 list-disc pl-5">
-            <li>Used Linux in virtualized environments and scripting languages to implement connectivity between DNP3 and ICCP protocols. </li>
-            <li>Developed various programs in C/C++ and Python to integrate different technologies for research. </li>
-            <li>Performed data-analysis techniques using Numpy and Pandas to find anomalies in malicious data from cyber-attacks. </li>
-            <li>Applied and studied offensive and defensive techniques to safeguard digital assets, such as SQL injections and DMZ networks. </li>
-        </ul>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience</h2>
+        </div>
 
-    </section>
-
-    <section id="projects" class="custom-section">
-            <h2 class="text-3xl font-semibold mb-8">Projects</h2>
-            
-            <div class="mb-8">
-                <h3 class="text-2xl font-semibold mb-4">Current Projects</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="project-card bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                        <h4 class="text-xl font-semibold mb-3">ASIC (AI for Satellite Image Classification)</h4>
-                        <p class="text-gray-700 mb-4">Fine-tuned a semantic segmentation model using satellite images from 
-                            <a href="https://datasetninja.com/deepglobe" class="text-maroon-600 hover:underline" style="color: #500000">DeepGlobe 2018 dataset</a>
-                             to classify land types such as city areas, forests, agricultural fields, and water bodies. 
-                             This classification can be used to automate land measurement calculations for urban planning, agriculture planning, 
-                             and environmental monitoring. Built a WebApp to deploy the model and allow users to input and image and get the segmentation and area classification of the entire image.
-                            The dataset contains images with scale 1pixel = 50 cm, automated the area calculation in squared meters. The model achieved over 70% pixel accuracy. A blog post was also built 
-                            to explain the project and the results. Access the blog <a href="https://vmbobato.github.io/asic-blog/" class="text-maroon-600 hover:underline" style="color: #500000">here</a>.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">Torchvision</span>
-                            <span class="skill-tag">Segformer B2</span>
-                            <span class="skill-tag">Deep Learning</span>
-                            <span class="skill-tag">Flask API</span>
-                            <span class="skill-tag">HTML/CSS/JS</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="https://github.com/vmbobato/ASIC" target="_blank" class="text-maroon-600 hover:underline flex items-center" style="color: #500000">
-                                <span>View Project</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                        <h4 class="text-xl font-semibold mb-3">CAPTCHA Image Classification</h4>
-                        <p class="text-gray-700 mb-4">Developing a deep learning model using VGG16 architecture and TensorFlow to classify CAPTCHA images with 93% accuracy. Implementing data augmentation techniques and evaluating performance using precision, recall, and F1 scores.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Deep Learning</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">VGG16</span>
-                            <span class="skill-tag">Data Augmentation</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="https://github.com/vmbobato/Captcha_Image_Classification" target="_blank" class="text-maroon-600 hover:underline flex items-center" style="color: #500000">
-                                <span>View Project</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <div class="timeline">
+          <article class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-card card">
+              <div class="tl-top">
+                <h3>Software Engineer — Avika Billing Solutions LLC</h3>
+                <div class="muted">Houston, TX • Aug 2025 – Present</div>
+              </div>
+              <ul class="list">
+                <li>Architected and deployed a HIPAA-aligned SaaS medical billing platform serving <b>100+ active users</b> using Flask, AWS Elastic Beanstalk, RDS, and SES.</li>
+                <li>Designed secure ACH + credit card payment infrastructure (NACHA generation, webhooks, monitoring), reducing processing time by <b>70%</b>.</li>
+                <li>Built cloud infrastructure + DevOps pipeline: SSL/TLS, domain management, CI/CD deployments, and database migrations.</li>
+                <li>Configured AWS WAF + rate-limiting policies to prevent abuse, contributing to <b>99% uptime</b>.</li>
+              </ul>
             </div>
+          </article>
 
+          <article class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-card card">
+              <div class="tl-top">
+                <h3>Graduate Researcher — PRISE Project (ECE Dept.)</h3>
+                <div class="muted">College Station, TX • Aug 2023 – Present</div>
+              </div>
+              <ul class="list">
+                <li>Designed and trained a PyTorch model for malicious TCP traffic detection achieving <b>95% accuracy</b>.</li>
+                <li>Processed and analyzed <b>100K+ packets</b> using Pandas to identify anomalies and attack patterns.</li>
+                <li>Deployed trained models as Flask REST APIs for real-time inference in simulated production environments.</li>
+                <li>Conducted anomaly detection across cyber-physical attack scenarios using NumPy, Pandas, and Matplotlib.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="card education-card">
+          <h3>Education</h3>
+          <div class="edu">
             <div>
-                <h3 class="text-2xl font-semibold mb-4">Past Projects</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="project-card bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                        <h4 class="text-xl font-semibold mb-3">Engineering Capstone</h4>
-                        <p class="text-gray-700 mb-4">Led the development of a laboratory bench simulating a SCADA system for energy utility companies. Created a custom RTU with Raspberry Pi, integrating analog/digital sensors and actuators with a GUI interface using DNP3 protocol.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">DNP3</span>
-                            <span class="skill-tag">Raspberry Pi</span>
-                            <span class="skill-tag">SCADA</span>
-                        </div>
-                        <p class="text-sm text-gray-600 italic mb-3">*This project cannot be open-sourced due to university and research policies.</p>
-                        <div class="flex justify-between items-center">
-                            <a href="https://github.com/dnp3/opendnp3" target="_blank" class="text-maroon-600 hover:underline flex items-center" style="color: #500000">
-                                <span>View OpenDNP3 Library</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                        <h4 class="text-xl font-semibold mb-3">Machine Learning Based Firewall</h4>
-                        <p class="text-gray-700 mb-4">Implemented a Python-based Intrusion Detection System using the IoT-23 dataset. Trained a Random Forest Classifier to analyze network traffic and identify malicious packets. 
-                            Implemented a Flask API to serve the model.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Machine Learning</span>
-                            <span class="skill-tag">Random Forest</span>
-                            <span class="skill-tag">Scikit-learn</span>
-                            <span class="skill-tag">Network Security</span>
-                            <span class="skill-tag">Flask</span>
-                            <span class="skill-tag">RESTful API</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="https://github.com/vmbobato/ML-Based_Firewall" target="_blank" class="text-maroon-600 hover:underline flex items-center" style="color: #500000">
-                                <span>View Project</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                        <h4 class="text-xl font-semibold mb-3">ShellBridge</h4>
-                        <p class="text-gray-700 mb-4">Developed a secure reverse shell application with SSL/TLS encryption for remote server interaction and file transfers between virtual machines.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Networking</span>
-                            <span class="skill-tag">SSL/TLS</span>
-                            <span class="skill-tag">Cybersecurity</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="https://github.com/vmbobato/ShellBridge" target="_blank" class="text-maroon-600 hover:underline flex items-center" style="color: #500000">
-                                <span>View Project</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                        <h4 class="text-xl font-semibold mb-3">Personal Password Manager</h4>
-                        <p class="text-gray-700 mb-4">Created a secure password manager with password generation capabilities and MySQL database integration for safe credential storage.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">MySQL cursor</span>
-                            <span class="skill-tag">Encryption</span>
-                            <span class="skill-tag">Database Management</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="https://github.com/vmbobato/MyPassManager" target="_blank" class="text-maroon-600 hover:underline flex items-center" style="color: #500000">
-                                <span>View Project</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+              <div class="edu-title">Texas A&M University — PhD Computer Engineering</div>
+              <div class="muted">GPA: 3.8 • College Station, TX</div>
             </div>
-        </section>
-        
-        <section id="skills" class="custom-section">
-            <h2 class="text-3xl font-semibold mb-6">Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div>
-                    <h3 class="text-xl font-semibold mb-3">Programming</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">Bash</span>
-                        <span class="skill-tag">Assembly</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3">Technologies</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">MySQL (Beginner)</span>
-                        <span class="skill-tag">CORE Emulator</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3">AI/ML</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">Deep Learning</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3">Networking</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">TCP/IP</span>
-                        <span class="skill-tag">Routing Protocols</span>
-                        <span class="skill-tag">ICS Protocols</span>
-                        <span class="skill-tag">Network Emulation</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3">Security</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Cybersecurity</span>
-                        <span class="skill-tag">Network Security</span>
-                        <span class="skill-tag">Penetration Testing</span>
-                        <span class="skill-tag">ML-Based Threat Detetction</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3">Tools</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Wireshark</span>
-                        <span class="skill-tag">Nmap</span>
-                        <span class="skill-tag">Metasploit</span>
-                        <span class="skill-tag">MS Excel</span>
-                        <span class="skill-tag">Jupyter Notebook</span>
-                    </div>
-                </div>
+            <div>
+              <div class="edu-title">Texas A&M University — M.S. Engineering Technology</div>
+              <div class="muted">Grad Dec 2024</div>
             </div>
-    </section>
-    
-    <section id="contact" class="custom-section">
-        <h2 class="text-3xl font-semibold">Contact Me</h2>
-        <p class="mt-2">Feel free to reach out via email at <a href="mailto:vmbobato@tamu.edu" class="text-maroon-600" style="color: #500000;">vmbobato@tamu.edu</a> 
-            or at <a href="mailto:vini.bobato@hotmail.com" class="text-maroon-600" style="color: #500000;">vini.bobato@hotmail.com</a>.</p>
+            <div>
+              <div class="edu-title">Texas A&M University — B.S. Electronic Systems Engineering Technology</div>
+              <div class="muted">Grad May 2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-        <footer class="bg-gray-800 text-white py-8 mt-12">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Contact</h3>
-                        <p>Email: <a href="mailto:vmbobato@tamu.edu" class="hover:text-gray-300">vmbobato@tamu.edu</a></p>
-                        <p>LinkedIn: <a href="https://www.linkedin.com/in/vmbobato/" class="hover:text-gray-300">vmbobato</a></p>
-                        <p>GitHub: <a href="https://www.github.com/vmbobato" class="hover:text-gray-300">vmbobato</a></p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Location</h3>
-                        <p>College Station, Texas</p>
-                        <p>United States</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-                        <ul class="space-y-2">
-                            <li><a href="#about" class="hover:text-gray-300">About</a></li>
-                            <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
-                            <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
-                            <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-8 pt-8 border-t border-gray-700 text-center">
-                    <p>&copy; 2025 Vinicius Bobato. All rights reserved.</p>
-                </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="controls">
+          <input id="projectSearch" class="input" placeholder="Search projects (e.g., RL, firewall, segmentation…)" />
+          <div class="chips" role="tablist" aria-label="Project filters">
+            <button class="chip-btn active" data-filter="all" type="button">All</button>
+            <button class="chip-btn" data-filter="security" type="button">Security</button>
+            <button class="chip-btn" data-filter="ml" type="button">ML/AI</button>
+            <button class="chip-btn" data-filter="cloud" type="button">Cloud</button>
+          </div>
+        </div>
+
+        <div id="projectGrid" class="grid three" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="muted">A practical toolbox, the stuff I actually use.</p>
+        </div>
+
+        <div class="grid three">
+          <div class="card">
+            <h3>Programming</h3>
+            <div class="pill-grid">
+              <span class="pill">Python</span><span class="pill">C/C++</span><span class="pill">Bash</span><span class="pill">SQL</span>
+              <span class="pill">HTML</span><span class="pill">JavaScript</span>
             </div>
+          </div>
+          <div class="card">
+            <h3>ML & Data</h3>
+            <div class="pill-grid">
+              <span class="pill">PyTorch</span><span class="pill">TensorFlow</span><span class="pill">Keras</span><span class="pill">Scikit-learn</span>
+              <span class="pill">NumPy</span><span class="pill">Pandas</span><span class="pill">Matplotlib</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Cloud & DevOps</h3>
+            <div class="pill-grid">
+              <span class="pill">AWS (EC2/EB/RDS/SES/S3)</span><span class="pill">Docker</span><span class="pill">Git</span>
+              <span class="pill">Flask</span><span class="pill">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card subtle lang-card">
+          <h3>Languages</h3>
+          <div class="pill-grid">
+            <span class="pill">Portuguese (Native)</span>
+            <span class="pill">English (Fluent)</span>
+            <span class="pill">Spanish (Advanced)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Want to collaborate, hire, or talk projects? Easy.</p>
+        </div>
+
+        <div class="grid two">
+          <div class="card">
+            <h3>Quick links</h3>
+            <div class="contact-links">
+              <a class="btn" href="mailto:vmbobato@tamu.edu">Email</a>
+              <a class="btn" href="https://linkedin.com/in/vmbobato" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="btn" href="https://github.com/vmbobato" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn ghost" href="assets/resume.pdf" download>Download Resume</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>One-liner</h3>
+            <p>
+              I build secure cloud software and ML prototypes that are measurable, shippable, and easy to maintain.
+              If you have a messy workflow, performance bottleneck, or security problem—let’s fix it.
+            </p>
+            <div class="muted mono">Houston / College Station • Open to roles + clients</div>
+          </div>
+        </div>
+
+        <footer class="footer muted">
+          <span>© <span id="year"></span> Vinicius M. Bobato</span>
+          <span class="sep">•</span>
+          <button class="linklike" id="backToTop" type="button">Back to top</button>
         </footer>
-    </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+    lucide.createIcons();
+    </script>
 </body>
 </html>
