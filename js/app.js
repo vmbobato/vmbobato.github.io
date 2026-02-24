@@ -108,7 +108,7 @@
       },
       {
         title: "ASIC — AI for Satellite Image Classification",
-        link: "https://github.com/vmbobato/ASIC",
+        link: "https://vmbobato.github.io/asic-blog/",
         tags: ["ml", "cloud"],
         bullets: [
           "Fine-tuned semantic segmentation on 800+ satellite images across 7 land cover classes.",
