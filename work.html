@@ -2,337 +2,221 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Enterprise-grade systems architecture + AI integration — Vinicius M. Bobato" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Build with Vinicius M. Bobato: secure systems architecture, cloud implementation, and applied AI." />
   <title>Build With Me | Vinicius M. Bobato</title>
-
-  <link rel="icon" href="assets/cli.png" type="image/png">
+  <link rel="icon" href="assets/cli.png" type="image/png" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
-  <div id="progress" class="progress"></div>
+  <div id="progress" class="progress" aria-hidden="true"></div>
 
-  <!-- Command Palette (optional reuse; keeps Ctrl+K consistent across pages) -->
-  <div id="paletteBackdrop" class="palette-backdrop" aria-hidden="true"></div>
-  <div id="palette" class="palette" role="dialog" aria-modal="true" aria-label="Command palette" aria-hidden="true">
-    <div class="palette-head">
-      <div class="kbd-hint">
-        <span class="pill">Ctrl</span><span class="pill">K</span>
-        <span class="muted">to open</span>
-      </div>
-      <button id="paletteClose" class="icon-btn" aria-label="Close command palette">✕</button>
-    </div>
-    <input id="paletteInput" class="palette-input" placeholder="Search sections, actions…" autocomplete="off" />
-    <div id="paletteList" class="palette-list" role="listbox"></div>
-    <div class="palette-foot muted">
-      Tip: type <span class="pill">case study</span>, <span class="pill">security</span>, <span class="pill">contact</span>
-    </div>
-  </div>
-
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html#top" aria-label="Home">
-        <span>Vini Bobato, MS</span>
-      </a>
-
-      <nav class="nav">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html#top">Vinicius M. Bobato</a>
+      <nav class="nav" aria-label="Primary">
         <a href="index.html#about">About</a>
         <a href="index.html#experience">Experience</a>
         <a href="index.html#projects">Projects</a>
-        <a href="index.html#skills">Skills</a>
+        <a href="index.html#strengths">Core Strengths</a>
         <a class="active" href="work.html">Build With Me</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
-
       <div class="header-actions">
-        <button id="themeToggle" class="btn ghost" type="button" aria-label="Toggle theme">
+        <button id="themeToggle" class="btn btn-secondary" type="button" aria-label="Toggle theme">
           <span id="themeIcon" aria-hidden="true">☾</span>
         </button>
-        <button id="openPalette" class="btn ghost" type="button">
-          <span class="mono">Ctrl K</span>
-        </button>
-        <a class="btn primary" href="assets/Vinicius_Resume.pdf" download>Download Resume</a>
+        <a class="btn btn-primary" href="assets/Vinicius_Resume.pdf" download>Download Resume</a>
       </div>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO -->
-    <section class="hero work-hero">
+    <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-left">
-          <div class="badge">Enterprise Systems Architecture • Security • AI Integration</div>
-
-          <h1>
-            I build enterprise-grade systems
-            <span class="grad">that are secure, scalable, and measurable.</span>
-          </h1>
-
-          <div class="hero-avatar">
-            <img src="assets/avatar.png" alt="Cartoon avatar" />
-          </div>
-
-          <p class="lead">
-            If your business is bottlenecked by manual workflows, fragile infrastructure, or security risk,
-            I design and ship systems that hold up in production — with AI where it adds real leverage.
+        <div>
+          <p class="eyebrow">Engineering Engagements</p>
+          <h1>Secure software architecture and AI integration for real production needs.</h1>
+          <p class="hero-lead">
+            If your team is dealing with fragile workflows, inconsistent security controls, or difficult-to-scale backend systems,
+            I help design and implement practical solutions grounded in measurable outcomes.
           </p>
-
-          <div class="hero-cta">
-            <a class="btn primary" href="#contact">Let’s talk</a>
-            <a class="btn" href="#case-study">View case study</a>
-            <button class="btn ghost" id="copyEmail" type="button" data-copy="vmbobato@gmail.edu">Copy email</button>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start a Conversation</a>
+            <a class="btn" href="#case-study">See Case Study</a>
+            <button class="btn btn-secondary" type="button" data-copy="vmbobato@tamu.edu">Copy Email</button>
           </div>
 
-          <div class="hero-mini icons">
-            <a href="https://github.com/vmbobato" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <i data-lucide="github"></i>
-            </a>
-            <a href="https://linkedin.com/in/vmbobato" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-              <i data-lucide="linkedin"></i>
-            </a>
-            <a href="#contact" aria-label="Contact">
-              <i data-lucide="mail"></i>
-            </a>
+          <div class="hero-meta" aria-label="Engagement focus">
+            <div class="meta-row">
+              <span class="meta-label">Primary scope</span>
+              <span class="meta-value">Cloud systems, secure backend engineering, applied ML services</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Typical outcomes</span>
+              <span class="meta-value">Reduced manual effort, improved reliability, stronger security posture</span>
+            </div>
           </div>
         </div>
 
-        <div class="hero-right">
-          <div class="card glass">
-            <div class="card-top">
-              <div class="mono muted">What you get:</div>
-              <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+        <aside class="hero-panel">
+          <h2 class="panel-title">How I deliver value</h2>
+          <ul class="clean-list">
+            <li>Replace manual operational bottlenecks with clear software workflows.</li>
+            <li>Implement secure defaults: least privilege, rate limiting, and hardened deployment patterns.</li>
+            <li>Apply AI where it improves decision speed or detection quality.</li>
+            <li>Keep systems maintainable with observability and practical rollout plans.</li>
+          </ul>
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>100+</strong>
+              <span>active users supported</span>
             </div>
-
-            <div class="grid two" style="gap:12px;">
-              <div class="mini-card">
-                <div class="mini-title"><i data-lucide="shield"></i> Secure by default</div>
-                <div class="muted">Least privilege, WAF/rate limits, safe deploy patterns.</div>
-              </div>
-              <div class="mini-card">
-                <div class="mini-title"><i data-lucide="layers"></i> Scalable architecture</div>
-                <div class="muted">Clean services, strong data layer, predictable performance.</div>
-              </div>
-              <div class="mini-card">
-                <div class="mini-title"><i data-lucide="activity"></i> Observability</div>
-                <div class="muted">Logs/metrics, error tracking, uptime + incident awareness.</div>
-              </div>
-              <div class="mini-card">
-                <div class="mini-title"><i data-lucide="cpu"></i> AI where it helps</div>
-                <div class="muted">Models as APIs, workflows augmented, not buzzword AI.</div>
-              </div>
+            <div class="stat">
+              <strong>70%</strong>
+              <span>processing time reduction</span>
             </div>
-
-            <div class="card-actions">
-              <a class="btn ghost" href="#offerings">See offerings</a>
+            <div class="stat">
+              <strong>99%</strong>
+              <span>uptime target mindset</span>
             </div>
           </div>
-
-          <div class="stack">
-            <div class="stat">
-              <div class="stat-num">100+</div>
-              <div class="stat-label">Active users served</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">70% in Average</div>
-              <div class="stat-label">Processing time reduced</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">99%</div>
-              <div class="stat-label">Uptime target mindset</div>
-            </div>
-          </div>
-        </div>
+        </aside>
       </div>
-
-      <div class="hero-bg" aria-hidden="true"></div>
     </section>
 
-    <!-- OFFERINGS -->
-    <section id="offerings" class="section">
+    <section id="offerings" class="section section-tight">
       <div class="container">
         <div class="section-head">
-          <h2>What I build</h2>
+          <h2>What I Build</h2>
+          <p>Focused offerings for organizations that need systems to be dependable, secure, and measurable.</p>
         </div>
 
-        <div class="grid three">
-          <div class="card">
-            <h3><i data-lucide="building-2"></i> Enterprise platforms</h3>
-            <p>Custom web platforms that replace fragile spreadsheets and manual work with a real system.</p>
-            <ul class="list">
-              <li>Role-based access (RBAC), audit-friendly flows</li>
-              <li>Reliable data layer + migrations</li>
-              <li>Performance-minded APIs</li>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Enterprise web platforms</h3>
+            <p>Custom backend-first platforms that replace spreadsheet-heavy workflows and improve process consistency.</p>
+            <ul class="clean-list">
+              <li>Role-aware access and audit-friendly flows</li>
+              <li>Reliable data layer and migration practices</li>
+              <li>API contracts that support long-term maintenance</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="card">
-            <h3><i data-lucide="cloud"></i> Cloud architecture on AWS</h3>
-            <p>Deployments designed for stability: security controls, monitoring, and clean environment separation.</p>
-            <ul class="list">
-              <li>EB/EC2 + RDS + S3 + SES</li>
-              <li>WAF / rate limiting, TLS, domain setup</li>
-              <li>Logging + health checks</li>
+          <article class="card">
+            <h3>AWS architecture and deployment</h3>
+            <p>Production deployments with security controls, monitoring, and clear environment boundaries.</p>
+            <ul class="clean-list">
+              <li>Elastic Beanstalk / EC2, RDS, S3, SES</li>
+              <li>TLS, WAF, and abuse prevention controls</li>
+              <li>Operational visibility through logging and health checks</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="card">
-            <h3><i data-lucide="sparkles"></i> AI integration</h3>
-            <p>AI only where it creates leverage: automation, detection, classification, search, and triage.</p>
-            <ul class="list">
-              <li>Models served as APIs</li>
-              <li>Human-in-the-loop workflows</li>
-              <li>Metrics + validation plans</li>
+          <article class="card">
+            <h3>Applied AI integration</h3>
+            <p>Model-powered functionality that supports real decisions and workflows rather than superficial feature demos.</p>
+            <ul class="clean-list">
+              <li>Model serving through API endpoints</li>
+              <li>Human-in-the-loop workflow design</li>
+              <li>Validation metrics tied to business usage</li>
             </ul>
-          </div>
-        </div>
-
-        <div class="grid two" style="margin-top:14px;">
-          <div class="card subtle">
-            <h3><i data-lucide="workflow"></i> Automation & ops</h3>
-            <p>Turn repetitive processes into reliable workflows with clear controls and measurable time savings.</p>
-          </div>
-          <div class="card subtle">
-            <h3><i data-lucide="lock"></i> Security posture upgrades</h3>
-            <p>Practical security improvements: access boundaries, secure defaults, abuse prevention, and hardening.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CASE STUDY -->
     <section id="case-study" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Case study</h2>
+          <h2>Case Study: Billing and Payments Platform</h2>
+          <p>A production modernization effort focused on security, workflow automation, and operational stability.</p>
         </div>
 
-        <div class="card case-card">
-          <div class="case-top">
-            <div>
-              <h3 style="margin-top:10px;">Billing + Payments Platform Modernization</h3>
-              <p class="muted" style="margin-top:6px;">
-                Designed a secure platform that automates payment workflows and reduces manual processing.
-              </p>
+        <article class="project">
+          <div class="project-layout">
+            <div class="project-block">
+              <h4>Problem / Context</h4>
+              <p>Payment processing and reconciliation were heavily manual, increasing operational effort and inconsistency.</p>
             </div>
-
-            <div class="case-metrics">
-              <div class="metric">
-                <div class="metric-num">100+</div>
-                <div class="metric-label muted">active users</div>
-              </div>
-              <div class="metric">
-                <div class="metric-num">70%</div>
-                <div class="metric-label muted">time reduction</div>
-              </div>
-              <div class="metric">
-                <div class="metric-num">99%</div>
-                <div class="metric-label muted">uptime mindset</div>
-              </div>
+            <div class="project-block">
+              <h4>What I built</h4>
+              <p>A secure SaaS architecture with automated ACH and card workflows, reliable persistence, and cloud deployment controls.</p>
+            </div>
+            <div class="project-block">
+              <h4>Stack</h4>
+              <p>Flask, AWS Elastic Beanstalk, RDS, S3, SES, WAF, CI/CD workflows, SSL/TLS controls.</p>
+            </div>
+            <div class="project-block">
+              <h4>Impact / Result</h4>
+              <p>Supported 100+ active users and reduced average processing time by 70% while operating under a 99% uptime target.</p>
             </div>
           </div>
-
-          <div class="grid two" style="margin-top:14px;">
-            <div class="card subtle">
-              <h3>Before</h3>
-              <ul class="list">
-                <li>Manual payment processing + reconciliation</li>
-                <li>High effort reporting and follow-ups</li>
-                <li>Operational risk from inconsistent workflows</li>
-              </ul>
-            </div>
-            <div class="card subtle">
-              <h3>After</h3>
-              <ul class="list">
-                <li>Automated ACH + card processing workflows</li>
-                <li>Secure cloud backend with reliable persistence</li>
-                <li>Monitoring-friendly, scalable foundation</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card subtle" style="margin-top:14px;">
-            <h3>Architecture highlights</h3>
-            <div class="pill-grid" style="margin-top:10px;">
-              <span class="pill">Flask</span>
-              <span class="pill">AWS</span>
-              <span class="pill">EB</span>
-              <span class="pill">RDS</span>
-              <span class="pill">S3</span>
-              <span class="pill">SES</span>
-              <span class="pill">WAF / Rate limits</span>
-              <span class="pill">CI/CD</span>
-            </div>
-          </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <!-- HOW I WORK -->
     <section id="process" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>How I work</h2>
-          <p class="muted">Clear steps. Clear deliverables. No chaos.</p>
+          <h2>Working Model</h2>
+          <p>Clear stages that keep technical risk visible and delivery predictable.</p>
         </div>
 
-        <div class="grid four">
-          <div class="card">
-            <h3>1) Discovery</h3>
-            <p>Understand bottlenecks, constraints, risks, and success metrics.</p>
-          </div>
-          <div class="card">
-            <h3>2) Architecture</h3>
-            <p>Design a secure system: data model, services, integration plan, scaling strategy.</p>
-          </div>
-          <div class="card">
-            <h3>3) Build & deploy</h3>
-            <p>Ship an MVP fast, then harden it with monitoring, testing, and operational guardrails.</p>
-          </div>
-          <div class="card">
-            <h3>4) Iterate</h3>
-            <p>Measure impact, improve UX, reduce cost, and stabilize performance.</p>
-          </div>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>1. Discovery and constraints</h3>
+            <p>Define the bottlenecks, technical constraints, security risks, and measurable success criteria.</p>
+          </article>
+          <article class="card">
+            <h3>2. Architecture and implementation plan</h3>
+            <p>Design the service boundaries, data model, integration approach, and phased rollout strategy.</p>
+          </article>
+          <article class="card">
+            <h3>3. Build and deployment</h3>
+            <p>Ship usable increments, then harden with monitoring, secure defaults, and operational safeguards.</p>
+          </article>
+          <article class="card">
+            <h3>4. Measurement and iteration</h3>
+            <p>Track impact, reduce failure points, and improve reliability and cost efficiency over time.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT CTA -->
     <section id="contact" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Let’s build</h2>
-          <p class="muted">If you want a system that feels “enterprise” without the enterprise overhead.</p>
+          <h2>Contact</h2>
+          <p>Share a short description of your current system and what outcomes you need.</p>
         </div>
 
-        <div class="grid two">
-          <div class="card">
+        <div class="contact-grid">
+          <article class="card">
             <h3>Start here</h3>
             <p>
-              Send me a short message with: what you do, what’s broken, and what “success” looks like.
-              I’ll respond with next steps and a suggested approach.
+              Send your project context, what is not working today, and the constraints your team is operating under.
+              I can then propose a practical technical direction.
             </p>
-            <div class="contact-links" style="margin-top:12px;">
-              <a class="btn primary" href="mailto:vmbobato@tamu.edu">Email me</a>
-              <button class="btn" id="copyEmail2" type="button" data-copy="vmbobato@tamu.edu">Copy email</button>
-              <a class="btn ghost" href="index.html#projects">See technical work</a>
+            <div class="contact-links">
+              <a class="btn btn-primary" href="mailto:vmbobato@tamu.edu">Email</a>
+              <a class="btn" href="https://linkedin.com/in/vmbobato" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="btn" href="index.html#projects">Technical Projects</a>
             </div>
-          </div>
+          </article>
 
-          <div class="card subtle">
-            <h3>Fast fit-check</h3>
-            <ul class="list">
-              <li>You have a workflow that’s manual or inconsistent.</li>
-              <li>You want a platform that won’t crumble under real usage.</li>
-              <li>You need security + reliability built in from day one.</li>
-              <li>You’re curious where AI can save time — but want it done responsibly.</li>
+          <article class="card">
+            <h3>Good fit indicators</h3>
+            <ul class="clean-list">
+              <li>You have manual or error-prone workflows that need to be systematized.</li>
+              <li>You need security and reliability built in, not added later.</li>
+              <li>You want AI integration that improves operations with clear evaluation criteria.</li>
             </ul>
-          </div>
+          </article>
         </div>
 
-        <footer class="footer muted">
-          <span>© <span id="year"></span> Vinicius M. Bobato</span>
-          <span class="sep">•</span>
+        <footer class="footer">
+          <span>&copy; <span id="year"></span> Vinicius M. Bobato</span>
           <a class="linklike" href="index.html">Back to home</a>
         </footer>
       </div>
@@ -340,7 +224,5 @@
   </main>
 
   <script src="js/app.js"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>lucide.createIcons();</script>
 </body>
 </html>

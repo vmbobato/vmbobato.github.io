@@ -2,411 +2,364 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Vinicius M. Bobato — ML/AI + Cybersecurity + Cloud Software" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Vinicius M. Bobato portfolio: software engineering, machine learning, cybersecurity, and cloud systems." />
   <title>Vinicius M. Bobato | Portfolio</title>
-
-  <link rel="icon" href="assets/cli.png" type="image/svg+xml">
+  <link rel="icon" href="assets/cli.png" type="image/png" />
   <link rel="stylesheet" href="css/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons.min.js"></script>
 </head>
-
 <body>
-  <!-- Top progress bar -->
-  <div id="progress" class="progress"></div>
+  <div id="progress" class="progress" aria-hidden="true"></div>
 
-  <!-- Command Palette -->
-  <div id="paletteBackdrop" class="palette-backdrop" aria-hidden="true"></div>
-  <div id="palette" class="palette" role="dialog" aria-modal="true" aria-label="Command palette" aria-hidden="true">
-    <div class="palette-head">
-      <div class="kbd-hint">
-        <span class="pill">Ctrl</span><span class="pill">K</span>
-        <span class="muted">to open</span>
-      </div>
-      <button id="paletteClose" class="icon-btn" aria-label="Close command palette">✕</button>
-    </div>
-    <input id="paletteInput" class="palette-input" placeholder="Search sections, actions…" autocomplete="off" />
-    <div id="paletteList" class="palette-list" role="listbox"></div>
-    <div class="palette-foot muted">
-      Tip: type <span class="pill">resume</span>, <span class="pill">projects</span>, <span class="pill">email</span>
-    </div>
-  </div>
-
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Home">
-        <span>Vini Bobato, MS</span>
-      </a>
-
-      <nav class="nav">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html#top">Vinicius M. Bobato</a>
+      <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#strengths">Core Strengths</a>
         <a href="work.html">Build With Me</a>
         <a href="#contact">Contact</a>
       </nav>
-
       <div class="header-actions">
-        <button id="themeToggle" class="btn ghost" type="button" aria-label="Toggle theme">
+        <button id="themeToggle" class="btn btn-secondary" type="button" aria-label="Toggle theme">
           <span id="themeIcon" aria-hidden="true">☾</span>
         </button>
-        <button id="openPalette" class="btn ghost" type="button">
-          <span class="mono">Ctrl K</span>
-        </button>
-        <a class="btn primary" href="assets/Vinicius_Resume.pdf" download>Download Resume</a>
+        <a class="btn btn-primary" href="assets/Vinicius_Resume.pdf" download>Download Resume</a>
       </div>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-left">
-          <div class="badge">PhD • ML/AI • Cybersecurity • AWS</div>
-
-          <h1>
-            Vinicius M. Bobato
-            <span class="grad">Engineering intelligence into secure systems.</span>
-          </h1>
-
-          <div class="hero-avatar">
-            <img src="assets/avatar.png" alt="Cartoon avatar" />
-          </div>
-
-          <p class="lead">
-            Ph.D. candidate in Computer Engineering with research experience in machine learning and data-driven systems.
-            I build practical ML + cloud software—especially for security and automation.
+        <div>
+          <p class="eyebrow">Software Engineer | AI/ML | Cybersecurity</p>
+          <h1>I build secure, production-ready systems with measurable outcomes.</h1>
+          <p class="hero-lead">
+            I am a full-time Ph.D. candidate in Computer Engineering at Texas A&amp;M and a part-time software engineer.
+            My work combines cloud architecture, secure backend engineering, and applied machine learning for real operational problems.
           </p>
 
-          <div class="hero-cta">
-            <a class="btn primary" href="#projects">See Projects</a>
-            <button class="btn" id="copyEmail" type="button" data-copy="vmbobato@tamu.edu">
-              Copy Email
-            </button>
-            <button class="btn ghost" id="copyPhone" type="button" data-copy="(817) 542-8538">
-              Copy Phone
-            </button>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Featured Projects</a>
+            <button class="btn" type="button" data-copy="vmbobato@tamu.edu">Copy Email</button>
+            <button class="btn btn-secondary" type="button" data-copy="(817) 542-8538">Copy Phone</button>
           </div>
 
-          <div class="hero-mini icons">
-            <a href="https://github.com/vmbobato" target="_blank" rel="noreferrer" aria-label="GitHub">
-                <i data-lucide="github"></i>
-            </a>
-
-            <a href="https://linkedin.com/in/vmbobato" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                <i data-lucide="linkedin"></i>
-            </a>
-
-            <a href="#contact" aria-label="Contact">
-                <i data-lucide="mail"></i>
-            </a>
+          <div class="hero-meta" aria-label="Professional snapshot">
+            <div class="meta-row">
+              <span class="meta-label">Current roles</span>
+              <span class="meta-value">Graduate Researcher at TAMU PRISE; Teacher Assistant for Local-Metro Area Networks</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Focus areas</span>
+              <span class="meta-value">Machine learning systems, network security analytics, cloud & AI engineering </span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Location</span>
+              <span class="meta-value">Houston / College Station, Texas</span>
+            </div>
           </div>
         </div>
 
-        <div class="hero-right">
-          <div class="card glass">
-            <div class="card-top">
-              <div class="mono muted">~/portfolio</div>
-              <div class="dots" aria-hidden="true">
-                <span></span><span></span><span></span>
-              </div>
+        <aside class="hero-panel" aria-label="Impact highlights">
+          <img class="avatar" src="assets/avatar.png" alt="Portrait illustration of Vinicius M. Bobato" />
+          <h2 class="panel-title">Recent Impact</h2>
+          <p class="panel-text">
+            In production and research environments, I focus on reducing operational friction while keeping security and reliability first-class concerns.
+          </p>
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>100+</strong>
+              <span>Active SaaS users supported</span>
             </div>
-            <pre class="terminal" aria-label="Terminal intro">
-<span class="t-muted">vmb@portfolio $</span> whoami
-Vinicius_Bobato
-
-<span class="t-muted">vmb@portfolio $</span> focus
-School: TAMU
-Degree: PhD_Computer_Engineering
-Research: AI / ML / Cybersecurity
-
-<span class="t-muted">vmb@portfolio $</span> currently
-software engineer @ Avika_Billing_Solutions
-graduate researcher @ TAMU_PRISE
-
-<span class="t-muted">vmb@portfolio $</span> why
-Because systems should think.
-Because security should adapt.
-Because enterprises deserve intelligence.
-
-<span class="t-muted">vmb@portfolio $</span> sudo hire vinicius
-[sudo] password for recruiter:
-Access granted.
-Welcome to the future.
-
-<span class="t-muted">vmb@portfolio $</span> exit
-There is no exit.
-Builders don't stop.
-            </pre>
-            <div class="card-actions">
-              <button class="btn" id="openPalette2" type="button">Open Command Palette</button>
-              <a class="btn ghost" href="#experience">View Timeline</a>
+            <div class="stat">
+              <strong>70%</strong>
+              <span>Payment processing time reduced</span>
+            </div>
+            <div class="stat">
+              <strong>99%</strong>
+              <span>Uptime mindset</span>
             </div>
           </div>
-
-          
-        </div>
+        </aside>
       </div>
-
-      <div class="hero-bg" aria-hidden="true"></div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
+    <section id="about" class="section section-tight">
       <div class="container">
         <div class="section-head">
           <h2>About</h2>
-          <p class="muted">A quick snapshot of what I do and what I care about.</p>
+          <p>
+            I work at the intersection of software engineering, AI, and cybersecurity.
+            I prefer shipping systems that are understandable, testable, and secure by default rather than over-designed demos.
+          </p>
         </div>
 
-        <div class="grid two">
-          <div class="card">
+        <div class="grid grid-2">
+          <article class="panel">
             <h3>What I build</h3>
             <p>
-              Secure web apps, cloud infrastructure, automation pipelines, and ML prototypes that can actually be tested and used.
-              I like projects where performance, reliability, and security all matter.
+              Secure web applications, cloud-native services, ML APIs, and automation pipelines where performance and operational reliability are non-negotiable.
             </p>
-          </div>
-
-          <div class="card">
-            <h3>What I’m optimizing for</h3>
-            <ul class="list">
-              <li>Clear outcomes (time saved, accuracy improved, incidents reduced)</li>
-              <li>Security by default (WAF, least privilege, rate limiting)</li>
-              <li>Simple deployments that don’t break at 2AM</li>
+          </article>
+          <article class="panel">
+            <h3>How I approach engineering</h3>
+            <ul class="clean-list">
+              <li>Define success in measurable terms before implementation.</li>
+              <li>Design for least privilege, abuse prevention, and observability from day one.</li>
+              <li>Prioritize maintainable architecture and predictable deployment workflows.</li>
             </ul>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Experience</h2>
+          <p>Roles where I have shipped production systems and applied research in real environments.</p>
         </div>
 
         <div class="timeline">
-          <article class="tl-item">
-            <div class="tl-dot" aria-hidden="true"></div>
-            <div class="tl-card card">
-              <div class="tl-top">
-                <h3>Software Engineer — Avika Billing Solutions LLC</h3>
-                <div class="muted">Houston, TX • Aug 2025 – Present</div>
-              </div>
-              <ul class="list">
-                <li>Architected and deployed a HIPAA-aligned SaaS medical billing platform serving <b>100+ active users</b> using Flask, AWS Elastic Beanstalk, RDS, and SES.</li>
-                <li>Designed secure ACH + credit card payment infrastructure (NACHA generation, webhooks, monitoring), reducing processing time by <b>70%</b>.</li>
-                <li>Built cloud infrastructure + DevOps pipeline: SSL/TLS, domain management, CI/CD deployments, and database migrations.</li>
-                <li>Configured AWS WAF + rate-limiting policies to prevent abuse, contributing to <b>99% uptime</b>.</li>
-              </ul>
+          <article class="timeline-item">
+            <div class="timeline-top">
+              <h3>Software Engineer, Avika Billing Solutions LLC</h3>
+              <div class="timeline-meta">Houston, TX | Aug 2025 - Present</div>
             </div>
+            <ul class="clean-list">
+              <li>Architected and deployed a HIPAA-aligned SaaS medical billing platform using Flask, AWS Elastic Beanstalk, RDS, and SES for 100+ active users.</li>
+              <li>Designed ACH and credit card payment infrastructure (NACHA generation, webhooks, monitoring), reducing processing time by 70%.</li>
+              <li>Built deployment and infrastructure workflows including SSL/TLS, domain management, CI/CD, and database migrations.</li>
+              <li>Configured AWS WAF and rate limiting policies to prevent abuse while supporting a 99% uptime target.</li>
+            </ul>
           </article>
 
-          <article class="tl-item">
-            <div class="tl-dot" aria-hidden="true"></div>
-            <div class="tl-card card">
-              <div class="tl-top">
-                <h3>Graduate Researcher — PRISE Project (ECEN Dept.)</h3>
-                <div class="muted">College Station, TX • Aug 2023 – Present</div>
-              </div>
-              <ul class="list">
-                <li>Designed and trained a PyTorch model for malicious TCP traffic detection achieving <b>95% accuracy</b>.</li>
-                <li>Processed and analyzed <b>100K+ packets</b> using Pandas to identify anomalies and attack patterns.</li>
-                <li>Deployed trained models as Flask REST APIs for real-time inference in simulated production environments.</li>
-                <li>Conducted anomaly detection across cyber-physical attack scenarios using NumPy, Pandas, and Matplotlib.</li>
-              </ul>
+          <article class="timeline-item">
+            <div class="timeline-top">
+              <h3>Graduate Researcher, PRISE Project (ECEN), Texas A&amp;M University</h3>
+              <div class="timeline-meta">College Station, TX | Aug 2023 - Present</div>
             </div>
+            <ul class="clean-list">
+              <li>Designed and trained a PyTorch model for malicious TCP traffic detection with 95% accuracy.</li>
+              <li>Processed 100K+ network packets with Pandas and NumPy to identify anomalies and attack patterns.</li>
+              <li>Deployed models as Flask REST APIs for real-time inference in simulated production settings.</li>
+            </ul>
           </article>
 
-          <article class="tl-item">
-            <div class="tl-dot" aria-hidden="true"></div>
-            <div class="tl-card card">
-              <div class="tl-top">
-                <h3>Graduate Teaching Assistant — Texas A&M University (ETID Dept.)</h3>
-                <div class="muted">College Station, TX • Jan 2024 – Present</div>
-              </div>
-              <ul class="list">
-                <li>Lead hands-on networking laboratory sessions using Cisco routers and switches to reinforce applied routing and switching concepts</li>
-                <li>Designed and implemented varied network topologies to demonstrate OSPF, BGP, RIP, VLANs, Trunking, DHCP, and STP configurations</li>
-                <li>Guided students in troubleshooting real-world networking scenarios using terminal commands across Linux and Windows systems</li>
-                <li>Provided individualized mentorship and technical support to help students achieve course objectives and develop workforce-ready skills.</li>
-              </ul>
+          <article class="timeline-item">
+            <div class="timeline-top">
+              <h3>Graduate Teaching Assistant, ETID, Texas A&amp;M University</h3>
+              <div class="timeline-meta">College Station, TX | Jan 2024 - Present</div>
             </div>
+            <ul class="clean-list">
+              <li>Led networking laboratories with Cisco hardware and practical routing and switching exercises.</li>
+              <li>Built topologies demonstrating OSPF, BGP, RIP, VLANs, trunking, DHCP, and STP.</li>
+              <li>Mentored students through troubleshooting workflows on Linux and Windows terminal environments.</li>
+            </ul>
           </article>
         </div>
 
-        <div class="card education-card">
-          <h3>Education</h3>
-          <div class="edu">
-            <div>
-              <div class="edu-title">Texas A&M University — Ph.D Computer Engineering</div>
-              <div class="muted">GPA: 3.8 • College Station, TX</div>
-            </div>
-            <div>
-              <div class="edu-title">Texas A&M University — M.S. Engineering Technology</div>
-              <div class="muted">Thesis: <a href="assets/Vinicius_Thesis_TAMU.pdf" download>Click Here</a></div>
-              <div class="muted">Grad Dec 2024 • GPA: 3.7 • College Station, TX</div>
-            </div>
-            <div>
-              <div class="edu-title">Texas A&M University — B.S. Electronic Systems Engineering Technology with Cybersecurity Minor</div>
-              <div class="muted">Grad May 2023 • GPA: 3.5 • College Station, TX</div>
-            </div>
-          </div>
+        <h3 class="subsection-title">Education</h3>
+        <div class="edu-list">
+          <article class="edu-item">
+            <strong>Texas A&amp;M University, Ph.D. Computer Engineering</strong>
+            <p>College Station, TX | GPA: 3.8</p>
+          </article>
+          <article class="edu-item">
+            <strong>Texas A&amp;M University, M.S. Engineering Technology</strong>
+            <p>College Station, TX | Graduated Dec 2024 | GPA: 3.7 | Thesis: <a href="assets/Vinicius_Thesis_TAMU.pdf" download>Download</a></p>
+          </article>
+          <article class="edu-item">
+            <strong>Texas A&amp;M University, B.S. Electronic Systems Engineering Technology (Cybersecurity Minor)</strong>
+            <p>College Station, TX | Graduated May 2023 | GPA: 3.5</p>
+          </article>
         </div>
-        <div class="card education-card">
-          <h3>Relevant Coursework</h3>
-          <div class="edu">
-            <div>
-              <div class="muted">AI • Deep Learning • Reinforcement Learning • Data Mining • Intelligent Agents • Data Analysis & Experimental Methods
-                • Data Analytics for Cybersecurity • Embedded Systems Software Dev • Embedded Systems Intelligent Design • Project Management • Advanced Network Systems & Security
-              • Industrial IoT</div>
-            </div>
-          </div>
-        </div>
+
+        <h3 class="subsection-title">Relevant Coursework</h3>
+        <article class="panel">
+          <p>
+            AI - Deep Learning - Reinforcement Learning - Data Mining - Intelligent Agents - Data Analysis &amp; Experimental Methods -
+            Data Analytics for Cybersecurity - Embedded Systems Software Development - Embedded Systems Intelligent Design -
+            Project Management - Advanced Network Systems &amp; Security - Industrial IoT.
+          </p>
+        </article>
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Projects</h2>
+          <h2>Featured Projects</h2>
+          <p>
+            Each project summary highlights context, implementation scope, engineering decisions, and results so technical reviewers can evaluate depth quickly.
+          </p>
         </div>
 
-        <div class="controls">
-          <input id="projectSearch" class="input" placeholder="Search projects (e.g., RL, firewall, segmentation…)" />
-          <div class="chips" role="tablist" aria-label="Project filters">
-            <button class="chip-btn active" data-filter="all" type="button">All</button>
-            <button class="chip-btn" data-filter="security" type="button">Security</button>
-            <button class="chip-btn" data-filter="ml" type="button">ML/AI</button>
-            <button class="chip-btn" data-filter="cloud" type="button">Cloud</button>
-          </div>
-        </div>
+        <div class="project-list">
+          <article class="project featured-project">
+            <div class="project-head">
+              <h3>Reinforcement Learning Firewall</h3>
+              <a class="btn btn-secondary" href="https://github.com/vmbobato/RL-Firewall" target="_blank" rel="noreferrer">View Repository</a>
+            </div>
+            <div class="project-layout">
+              <div>
+                <div class="project-block">
+                  <h4>Problem / Context</h4>
+                  <p>Static firewall rules struggle with evolving traffic behavior and can create costly false positives or missed attacks.</p>
+                </div>
+                <div class="project-block">
+                  <h4>What I built</h4>
+                  <p>Created a custom Gymnasium environment and trained Q-Learning, SARSA, and DQN agents to make sequential allow/deny decisions.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Engineering decisions</h4>
+                  <p>Designed a reward function that balances detection performance against operational cost, then compared learning approaches against static baselines.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Impact / Result</h4>
+                  <p>Demonstrated stronger policy adaptation than fixed-rule baselines in simulation.</p>
+                </div>
+              </div>
+              <aside class="project-kpis" aria-label="Reinforcement learning firewall highlights">
+                <h4>Highlights</h4>
+                <ul>
+                  <li>Sequential decision policy for allow/deny actions</li>
+                  <li>Compared Q-Learning, SARSA, and DQN strategies</li>
+                  <li>Focused rewards on security accuracy and operational cost</li>
+                  <li>Benchmarked against static firewall baselines</li>
+                </ul>
+              </aside>
+              </div>
+            <p class="tech-line"><strong>Stack:</strong> Python, Gymnasium, reinforcement learning algorithms.</p>
+            <div class="tags"><span class="tag">Security</span><span class="tag">ML</span></div>
+          </article>
 
-        <div id="projectGrid" class="grid three" aria-live="polite"></div>
+          <article class="project">
+            <div class="project-head">
+              <h3>ASIC: AI for Satellite Image Classification</h3>
+              <a class="btn btn-secondary" href="https://vmbobato.github.io/asic-blog/" target="_blank" rel="noreferrer">View Project</a>
+            </div>
+            <div class="project-layout">
+              <div class="project-block">
+                <h4>Problem / Context</h4>
+                <p>Satellite segmentation tasks require robust classification across varied terrain and image quality constraints.</p>
+              </div>
+              <div class="project-block">
+                <h4>What I built</h4>
+                <p>Fine-tuned a semantic segmentation pipeline on 800+ satellite images covering seven land-cover classes and exposed it through a Flask web app.</p>
+              </div>
+              <div class="project-block">
+                <h4>Engineering decisions</h4>
+                <p>Focused on model and preprocessing choices that supported practical user-driven image analysis through a web interface.</p>
+              </div>
+              <div class="project-block">
+                <h4>Impact / Result</h4>
+                <p>Reached 70%+ pixel-level segmentation accuracy on real-world imagery.</p>
+              </div>
+            </div>
+            <p class="tech-line"><strong>Stack:</strong> Python, Flask, computer vision segmentation workflows.</p>
+            <div class="tags"><span class="tag">ML</span><span class="tag">Cloud App</span></div>
+          </article>
+
+          <article class="project">
+            <div class="project-head">
+              <h3>Dynamic Honeypot Game</h3>
+              <a class="btn btn-secondary" href="https://github.com/vmbobato/dynamic-Honeypot-Game" target="_blank" rel="noreferrer">View Repository</a>
+            </div>
+            <div class="project-layout">
+              <div class="project-block">
+                <h4>Problem / Context</h4>
+                <p>Defenders need adaptive strategies that anticipate attacker behavior in constrained network environments.</p>
+              </div>
+              <div class="project-block">
+                <h4>What I built</h4>
+                <p>Modeled attacker and defender interactions as a two-player zero-sum game and used multiplicative weights update to approximate Nash equilibrium behavior.</p>
+              </div>
+              <div class="project-block">
+                <h4>Engineering decisions</h4>
+                <p>Simulated neighborhood detection and strategy shifts in a grid network environment to evaluate tactical tradeoffs.</p>
+              </div>
+              <div class="project-block">
+                <h4>Impact / Result</h4>
+                <p>Produced a simulation framework for comparing dynamic deception strategies under adversarial conditions.</p>
+              </div>
+            </div>
+            <p class="tech-line"><strong>Stack:</strong> Python, game-theoretic modeling, simulation tooling.</p>
+            <div class="tags"><span class="tag">Security</span><span class="tag">Research</span></div>
+          </article>
+        </div>
       </div>
     </section>
 
-
-    <section id="skills" class="section">
+    <section id="strengths" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Technology I Use</h2>
+          <h2>What I Work With</h2>
+          <p>A grouped view of technical strengths instead of a logo wall.</p>
         </div>
 
-        <div class="skills-grid">
-          <div class="card">
-            <h3>Programming</h3>
-            <div class="logo-row">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg" alt="Python">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cplusplus.svg" alt="C++">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gnubash.svg" alt="Bash">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" alt="JavaScript">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" alt="HTML">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg" alt="CSS">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg" alt="MySQL">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postgresql.svg" alt="PSQL">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/json.svg" alt="JSON">
-            </div>
-          </div>
-          <div class="card">
-            <h3>ML & Data</h3>
-            <div class="logo-row">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg" alt="PyTorch">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tensorflow.svg" alt="TensorFlow">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/keras.svg" alt="Keras">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/scikitlearn.svg" alt="Scikit-learn">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg" alt="OpenAI">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/numpy.svg" alt="NumPy">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg" alt="Pandas">
-            </div>
-          </div>
-          <div class="card">
-            <h3>Cloud & DevOps</h3>
-            <div class="logo-row">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonaws.svg" alt="AWS">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonrds.svg" alt="RDS">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazons3.svg" alt="S3">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonec2.svg" alt="EC2">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazoncloudwatch.svg" alt="CloudWatch">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg" alt="Docker">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" alt="Git">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/flask.svg" alt="Flask">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/fastapi.svg" alt="FastAPI">
-            </div>
-          </div>
-          <div class="card">
-            <h3>Networking</h3>
-            <div class="logo-row">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linux.svg" alt="Linux">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/ubuntu.svg" alt="Ubuntu">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/kalilinux.svg" alt="Kali">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/wireshark.svg" alt="Wireshark">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/letsencrypt.svg" alt="TLS/SSL">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cisco.svg" alt="Cisco">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openvpn.svg" alt="OpenVPN">
-            </div>
-          </div>
-          <div class="card">
-            <h3>Systems & Hardware</h3>
-            <div class="logo-row">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/raspberrypi.svg" alt="Raspberry Pi">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/arduino.svg" alt="Arduino">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/espressif.svg" alt="ESP32">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/stmicroelectronics.svg" alt="STM32">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/assemblyscript.svg" alt="Assembly">
-            </div>
-          </div>
+        <div class="grid grid-2">
+          <article class="card strength-group">
+            <h3>Backend and platforms</h3>
+            <p>Python, Flask, FastAPI, JavaScript, SQL (MySQL/PostgreSQL), API design, authentication and role-based access patterns.</p>
+          </article>
+          <article class="card strength-group">
+            <h3>Machine learning and data</h3>
+            <p>PyTorch, TensorFlow, Keras, scikit-learn, NumPy, Pandas, and model-to-API deployment for applied ML workflows.</p>
+          </article>
+          <article class="card strength-group">
+            <h3>Cloud and operations</h3>
+            <p>AWS (Elastic Beanstalk, EC2, RDS, S3, SES, CloudWatch), CI/CD pipelines, TLS setup, migration workflows, and production monitoring.</p>
+          </article>
+          <article class="card strength-group">
+            <h3>Security and systems</h3>
+            <p>AWS WAF, rate limiting, network analysis, Linux-based tooling, Wireshark, and cybersecurity-focused experimentation.</p>
+          </article>
         </div>
 
-        <div class="card subtle lang-card">
+        <article class="panel" style="margin-top: 1rem;">
           <h3>Languages</h3>
-          <div class="pill-grid">
-            <span class="pill">Portuguese (Native)</span>
-            <span class="pill">English (Fluent)</span>
-            <span class="pill">Spanish (Advanced)</span>
-          </div>
-        </div>
+          <p>Portuguese (Native), English (Fluent), Spanish (Advanced).</p>
+        </article>
       </div>
     </section>
-    
 
-    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Contact</h2>
-          <p class="muted">Want to collaborate, hire, or talk projects? Easy.</p>
+          <p>For full-time roles, research collaborations, and engineering engagements.</p>
         </div>
 
-        <div class="grid two">
-          <div class="card">
-            <h3>Quick links</h3>
+        <div class="contact-grid">
+          <article class="card">
+            <h3>Reach me directly</h3>
+            <p>
+              The easiest way to start is email with a short brief: your team context, the technical problem, and desired outcome.
+            </p>
             <div class="contact-links">
-              <a class="btn" href="mailto:vmbobato@tamu.edu">Email</a>
+              <a class="btn btn-primary" href="mailto:vmbobato@tamu.edu">Email</a>
               <a class="btn" href="https://linkedin.com/in/vmbobato" target="_blank" rel="noreferrer">LinkedIn</a>
               <a class="btn" href="https://github.com/vmbobato" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="btn ghost" href="assets/Vinicius_Resume.pdf" download>Download Resume</a>
+              <a class="btn btn-secondary" href="assets/Vinicius_Resume.pdf" download>Resume</a>
             </div>
-          </div>
-
-          <div class="card">
-            <h3>One-liner</h3>
-            <p>
-              I build secure cloud software and ML prototypes that are measurable, shippable, and easy to maintain.
-              If you have a messy workflow, performance bottleneck, or security problem—let’s fix it.
-            </p>
-            <div class="muted mono">Houston / College Station • Open to roles + clients</div>
-          </div>
+          </article>
+          <article class="card">
+            <h3>What I can help with</h3>
+            <ul class="clean-list">
+              <li>Designing and hardening cloud-based applications.</li>
+              <li>Shipping ML features as reliable services, not isolated notebooks.</li>
+              <li>Improving security posture without slowing delivery.</li>
+            </ul>
+          </article>
         </div>
 
-        <footer class="footer muted">
-          <span>© <span id="year"></span> Vinicius M. Bobato</span>
-          <span class="sep">•</span>
+        <footer class="footer">
+          <span>&copy; <span id="year"></span> Vinicius M. Bobato</span>
           <button class="linklike" id="backToTop" type="button">Back to top</button>
         </footer>
       </div>
@@ -414,9 +367,5 @@ Builders don't stop.
   </main>
 
   <script src="js/app.js"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-    lucide.createIcons();
-    </script>
 </body>
 </html>
