@@ -537,13 +537,20 @@ h1 {
 .product-snapshot {
   display: grid;
   gap: var(--space-4);
+  justify-items: center;
+}
+
+.product-snapshot .panel-title,
+.product-snapshot .panel-text,
+.product-snapshot .stat-grid {
+  justify-self: stretch;
+  text-align: left;
 }
 
 .product-logo {
-  width: 4.75rem;
-  height: 4.75rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
+  width: min(100%, 15rem);
+  height: auto;
+  aspect-ratio: 1;
   object-fit: cover;
 }
 
@@ -705,6 +712,11 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-4);
+}
+
+.report-terminal {
+  margin-top: var(--space-5);
+  max-width: 34rem;
 }
 
 .report-details {
