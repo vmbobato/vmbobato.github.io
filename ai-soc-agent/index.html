@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI SOC Agent helps small businesses review AWS and NGINX website logs, spot suspicious activity, and generate clear security reports." />
+  <title>AI SOC Agent | Vinicius M. Bobato</title>
+  <link rel="icon" href="../assets/cli.png" type="image/png" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="progress" class="progress" aria-hidden="true"></div>
+
+  <header class="site-header product-header">
+    <div class="container header-row">
+      <a class="brand product-brand" href="#top">
+        <img src="assets/logo.png" alt="" />
+        <span>AI SOC Agent</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#problem">Problem</a>
+        <a href="#works-with">Tools</a>
+        <a href="#features">Features</a>
+        <a href="#workflow">How It Works</a>
+        <a href="registration.html">Registration</a>
+        <a href="#technical">Technical</a>
+        <a href="#contact">Contact</a>
+        <a href="../index.html">Home</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn btn-secondary" type="button" aria-label="Toggle theme">
+          <span id="themeIcon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero product-hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">AI-Powered Website Log Review | Coming Soon</p>
+          <h1>Own your website. Understand your logs. Focus on growth.</h1>
+          <p class="hero-lead">
+            AI SOC Agent helps you take ownership of your website security visibility by reviewing AWS and NGINX logs,
+            spotting suspicious activity, and turning the findings into clear reports without hiring a full security team.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="registration.html">Join Early Access</a>
+            <a class="btn" href="#workflow">See How It Works</a>
+            <a class="btn btn-secondary" href="#contact">Contact</a>
+          </div>
+
+          <div class="hero-meta" aria-label="AI SOC Agent snapshot">
+            <div class="meta-row">
+              <span class="meta-label">Designed for</span>
+              <span class="meta-value">Small businesses that want more control over website security visibility</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Core outcome</span>
+              <span class="meta-value">Clear answers from your own AWS and NGINX website logs</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Status</span>
+              <span class="meta-value">Coming soon for early client registration and onboarding</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-panel product-snapshot" aria-label="AI SOC Agent product preview">
+          <img class="product-logo" src="assets/logo.png" alt="AI SOC Agent logo" />
+          <div class="terminal-preview">
+            <div class="terminal-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="terminal-body">
+              <p><strong>review</strong> website logs received</p>
+              <p><strong>found</strong> scans, suspicious requests, login attempts</p>
+              <p><strong>context</strong> suspicious IP details attached</p>
+              <p><strong>summary</strong> plain-English incident report generated</p>
+              <p><strong>next</strong> findings ready for review</p>
+            </div>
+          </div>
+          <h2 class="panel-title">Clear findings, not confusing log noise</h2>
+          <p class="panel-text">
+            The platform organizes suspicious activity into readable reports so you can understand what happened and decide what needs attention.
+          </p>
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>5</strong>
+              <span>common website threat patterns checked</span>
+            </div>
+            <div class="stat">
+              <strong>2</strong>
+              <span>IP reputation sources supported</span>
+            </div>
+            <div class="stat">
+              <strong>API</strong>
+              <span>client log submission workflow</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-tight value-band">
+      <div class="container">
+        <article class="panel">
+          <h2>Know when your website is being scanned, probed, or targeted without hiring a security team.</h2>
+          <p>
+            AI SOC Agent helps small businesses turn raw website logs into clear security visibility,
+            so suspicious activity is easier to understand and easier to act on.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="problem" class="section section-tight">
+      <div class="container">
+        <div class="section-head">
+          <h2>Take ownership of what your website is telling you</h2>
+          <p>
+            Provider dashboards and basic alerts do not always explain what is happening behind the scenes.
+            AI SOC Agent helps turn your own website logs into clear findings and reports.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>See beyond provider dashboards</h3>
+            <p>Use your AWS and NGINX logs to understand suspicious activity instead of relying only on high-level alerts.</p>
+          </article>
+          <article class="card">
+            <h3>Understand who is behind activity</h3>
+            <p>Add useful context about suspicious IP addresses, including location, network owner, and abuse reputation when available.</p>
+          </article>
+          <article class="card">
+            <h3>Get readable reports</h3>
+            <p>Generate clear reports that explain what was found, why it matters, and what should be reviewed next.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="works-with" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Powered by modern tools</h2>
+          <p>Built around AWS and NGINX log review today, with Azure log support planned.</p>
+        </div>
+
+        <div class="logo-carousel" aria-label="Powered by AWS, Azure, NGINX, OpenAI, Ollama, Python, and FastAPI">
+          <div class="logo-track">
+            <div class="logo-tile">
+              <img class="invert-dark-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/amazonwebservices.svg" alt="AWS" />
+            </div>
+            <div class="logo-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" />
+            </div>
+            <div class="logo-tile">
+              <img src="https://cdn.simpleicons.org/nginx/009639" alt="NGINX" />
+            </div>
+            <div class="logo-tile">
+              <img class="invert-dark-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/openai.svg" alt="OpenAI" />
+            </div>
+            <div class="logo-tile">
+              <img class="invert-dark-logo compact-logo" src="https://cdn.jsdelivr.net/gh/ollama/ollama@main/docs/ollama-logo.svg" alt="Ollama" />
+            </div>
+            <div class="logo-tile">
+              <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" />
+            </div>
+            <div class="logo-tile">
+              <img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" />
+            </div>
+            <div class="logo-tile" aria-hidden="true">
+              <img class="invert-dark-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/amazonwebservices.svg" alt="" />
+            </div>
+            <div class="logo-tile" aria-hidden="true">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="" />
+            </div>
+            <div class="logo-tile" aria-hidden="true">
+              <img src="https://cdn.simpleicons.org/nginx/009639" alt="" />
+            </div>
+            <div class="logo-tile" aria-hidden="true">
+              <img class="invert-dark-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/openai.svg" alt="" />
+            </div>
+            <div class="logo-tile" aria-hidden="true">
+              <img class="invert-dark-logo compact-logo" src="https://cdn.jsdelivr.net/gh/ollama/ollama@main/docs/ollama-logo.svg" alt="" />
+            </div>
+            <div class="logo-tile" aria-hidden="true">
+              <img src="https://cdn.simpleicons.org/python/3776AB" alt="" />
+            </div>
+            <div class="logo-tile" aria-hidden="true">
+              <img src="https://cdn.simpleicons.org/fastapi/009688" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>What it helps you see</h2>
+          <p>AI SOC Agent focuses on the website activity small teams are most likely to miss when they do not have dedicated security monitoring.</p>
+        </div>
+
+        <div class="project-list product-feature-list">
+          <article class="project">
+            <div class="project-head">
+              <h3>Suspicious website activity</h3>
+            </div>
+            <div class="project-layout">
+              <div class="project-block">
+                <h4>What it checks</h4>
+                <p>Looks for scans, requests for sensitive files, blocked requests, repeated login attempts, and sudden traffic bursts.</p>
+              </div>
+              <div class="project-block">
+                <h4>Why it matters</h4>
+                <p>These patterns can show that someone is searching your website for weak points or trying to break into protected areas.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-head">
+              <h3>IP reputation and context</h3>
+            </div>
+            <div class="project-layout">
+              <div class="project-block">
+                <h4>What it adds</h4>
+                <p>For suspicious IP addresses, the platform can add location, network owner, and abuse reputation details.</p>
+              </div>
+              <div class="project-block">
+                <h4>Why it matters</h4>
+                <p>This helps separate ordinary traffic from activity that may need closer review.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-head">
+              <h3>AI-assisted summaries</h3>
+            </div>
+            <div class="project-layout">
+              <div class="project-block">
+                <h4>Plain language</h4>
+                <p>AI can summarize the findings in simple language so the report is easier to understand.</p>
+              </div>
+              <div class="project-block">
+                <h4>Still works without AI</h4>
+                <p>If the AI summary is unavailable, the log review and report generation still continue.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>What it does and does not do</h2>
+          <p>Clear boundaries help you know exactly what AI SOC Agent is built for.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>What it checks</h3>
+            <ul class="clean-list">
+              <li>Scans and requests for sensitive files.</li>
+              <li>Repeated login attempts and blocked requests.</li>
+              <li>Traffic bursts and suspicious IP activity.</li>
+              <li>Website log patterns that deserve closer review.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>What it does not do</h3>
+            <ul class="clean-list">
+              <li>It does not automatically change your website.</li>
+              <li>It does not block traffic or patch systems by itself.</li>
+              <li>It does not replace a full security program.</li>
+              <li>It helps you understand the findings so next steps are clearer.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sample-report" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>What you receive</h2>
+          <p>A real report can turn thousands of raw log entries into a short explanation of what happened, what matters most, and what to review next.</p>
+        </div>
+
+        <article class="report-preview">
+          <div class="report-summary">
+            <p class="eyebrow">Sample report summary</p>
+            <h3>Two suspicious campaigns were detected against the website.</h3>
+            <p>
+              One campaign scanned many pages and received successful responses on a few endpoints that should be reviewed.
+              A second campaign targeted sensitive paths but was fully blocked.
+            </p>
+          </div>
+
+          <div class="report-kpis" aria-label="Sample report highlights">
+            <div class="stat">
+              <strong>2</strong>
+              <span>attack campaigns</span>
+            </div>
+            <div class="stat">
+              <strong>3</strong>
+              <span>incident cases</span>
+            </div>
+            <div class="stat">
+              <strong>9,514</strong>
+              <span>scan requests</span>
+            </div>
+            <div class="stat">
+              <strong>4</strong>
+              <span>successful responses to review</span>
+            </div>
+          </div>
+
+          <div class="grid grid-2 report-details">
+            <article class="card">
+              <h3>Highest-priority finding</h3>
+              <p>
+                A high-volume scan targeted hundreds of paths and returned successful responses on a few endpoints,
+                which means those pages should be reviewed for possible information exposure.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Recommended next steps</h3>
+              <ul class="clean-list">
+                <li>Review endpoints that returned successful responses.</li>
+                <li>Confirm debug or info pages are not exposed.</li>
+                <li>Add rate limits or blocking for repeat sources.</li>
+                <li>Keep the blocking rules that already worked.</li>
+              </ul>
+            </article>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>The process is simple: send logs, review suspicious activity, add context, and receive a report.</p>
+        </div>
+
+        <div class="pipeline-grid">
+          <article class="card pipeline-step">
+            <span class="step-index">01</span>
+            <h3>Send logs</h3>
+            <p>Your AWS and NGINX website logs are submitted through the API for review.</p>
+          </article>
+          <article class="card pipeline-step">
+            <span class="step-index">02</span>
+            <h3>Find suspicious activity</h3>
+            <p>The system checks for scans, suspicious requests, repeated login attempts, blocked requests, and unusual traffic spikes.</p>
+          </article>
+          <article class="card pipeline-step">
+            <span class="step-index">03</span>
+            <h3>Add context</h3>
+            <p>Suspicious IP addresses are checked against reputation and network information when available.</p>
+          </article>
+          <article class="card pipeline-step">
+            <span class="step-index">04</span>
+            <h3>Create a report</h3>
+            <p>The platform produces a clear report with findings, supporting details, and optional AI summaries.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>When it helps</h2>
+          <p>Use AI SOC Agent when you need to understand suspicious website activity without building a full security operation.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>After unusual website activity</h3>
+            <p>Review logs when you see traffic spikes, blocked requests, failed logins, or strange access patterns.</p>
+          </article>
+          <article class="card">
+            <h3>Before asking for help</h3>
+            <p>Get a report that makes it easier to understand what happened before bringing in outside support.</p>
+          </article>
+          <article class="card">
+            <h3>For multiple clients</h3>
+            <p>Submit logs through separate API keys so each client's findings and reports stay separated.</p>
+          </article>
+          <article class="card">
+            <h3>For repeat reviews</h3>
+            <p>Use the API to submit logs, check progress, and download reports whenever a review is needed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="technical" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Behind the product</h2>
+          <p>For technical readers, AI SOC Agent is an API-first Python service that processes client logs through a security analysis pipeline.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card strength-group">
+            <h3>Log intake and parsing</h3>
+            <p>The API receives AWS and NGINX log files, reads them line by line, and turns useful fields into structured data the system can review.</p>
+          </article>
+          <article class="card strength-group">
+            <h3>Detection and IP checks</h3>
+            <p>Detection rules look for scans, suspicious requests, repeated login attempts, blocked requests, and traffic bursts. IPinfo and AbuseIPDB can add reputation context.</p>
+          </article>
+          <article class="card strength-group">
+            <h3>Reports and client separation</h3>
+            <p>Each run stores findings, summaries, reports, and status data. Tenant-aware API keys keep client submissions and downloads separated.</p>
+          </article>
+        </div>
+
+        <article class="panel stack-panel">
+          <h3>Technical stack</h3>
+          <p>Python, FastAPI, Uvicorn, Pandas, NumPy, Requests, python-dotenv, OpenAI, Ollama, IPinfo, AbuseIPDB, JSON outputs, Markdown incident reports, append-only audit logs, hashed API keys, and unittest coverage.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Explore AI SOC Agent</h2>
+          <p>AI SOC Agent is coming soon. Connect with me to learn how it can help your small business understand suspicious activity in AWS and NGINX logs.</p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="card">
+            <h3>Next step</h3>
+            <p>
+              Register interest and share what kind of website you run. I can help confirm what logs are available and explain how early access will work.
+            </p>
+            <div class="contact-links">
+              <a class="btn btn-primary" href="registration.html">Register Interest</a>
+              <a class="btn" href="#technical">View Technical Details</a>
+              <a class="btn btn-secondary" href="#workflow">See Workflow</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Best fit</h3>
+            <ul class="clean-list">
+              <li>Small businesses that need help understanding suspicious website activity.</li>
+              <li>Client workflows that need secure log submissions and downloadable reports.</li>
+              <li>Lean teams that want readable findings without losing the technical evidence.</li>
+            </ul>
+          </article>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="product-footer">
+    <div class="container product-footer-grid">
+      <div>
+        <a class="brand product-brand" href="#top">
+          <img src="assets/logo.png" alt="" />
+          <span>AI SOC Agent</span>
+        </a>
+        <p>
+          AI-powered website log review for small businesses that want clearer security visibility without building a full security team.
+        </p>
+      </div>
+
+      <div>
+        <h2>Product</h2>
+        <a href="#problem">Problem</a>
+        <a href="#features">Features</a>
+        <a href="#workflow">How It Works</a>
+        <a href="#technical">Technical</a>
+      </div>
+
+      <div>
+        <h2>Early Access</h2>
+        <a href="registration.html">Registration</a>
+        <a href="registration.html#client-steps">Client Steps</a>
+        <a href="registration.html#access">What Is Included</a>
+        <a href="mailto:vmbobato@tamu.edu?subject=AI%20SOC%20Agent%20Question">Contact</a>
+      </div>
+
+      <div>
+        <h2>Status</h2>
+        <span>Coming soon</span>
+        <span>AWS + NGINX logs today</span>
+        <span>Azure support planned</span>
+        <a href="../index.html">Portfolio Home</a>
+      </div>
+    </div>
+
+    <div class="container product-footer-meta">
+      <span>&copy; <span id="year"></span> AI SOC Agent</span>
+      <span>Log analysis and reporting only. No automatic remediation.</span>
+      <button class="linklike" id="backToTop" type="button">Back to top</button>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
